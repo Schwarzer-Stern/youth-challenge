@@ -1,0 +1,56 @@
+.duration {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.duration h2 {
+  font-family: 'Dongle', sans-serif;
+  font-size: 3rem;
+  color: #4aa3f0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.table-wrapper {
+  overflow-x: auto; /* 모바일에서 스크롤 가능 */
+}
+
+.duration table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  min-width: 600px;
+}
+
+.duration th, .duration td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.duration th {
+  background-color: #4aa3f0;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.duration tbody tr {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.duration tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.duration tbody tr:hover {
+  background-color: #e6f2fb;
+}
+
+.duration td {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}

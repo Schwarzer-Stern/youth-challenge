@@ -1,0 +1,65 @@
+.accordion-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.accordion-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordion-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between; /* 좌측 제목, 우측 버튼 */
+  align-items: center;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+}
+
+.accordion-header h3 {
+  font-family: 'Dongle', sans-serif;
+  font-size: 3rem;
+  color: #4aa3f0;
+  margin: 0;
+}
+
+.accordion-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.accordion-btn:hover {
+  background-color: #217dbb;
+}
+
+.accordion-content {
+  max-height: 0;          /* 기본 숨김 */
+  overflow: hidden;
+  padding: 0 2rem;
+  background-color: #fafafa;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  text-align: center;
+}
+
+.accordion-content p {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+}

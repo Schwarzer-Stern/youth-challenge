@@ -1,0 +1,43 @@
+.image-box {
+  width: 1050px;
+  height: 500px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+
+  display: flex;            
+  justify-content: center;   /* 가로 중앙 정렬만 */
+  /* align-items 제거 -> 세로 이동 가능 */
+}
+
+.rotate-image {
+  width: 1000px;              /* 박스보다 크게 설정 */
+  height: 1000px;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+
+  display: block;
+  margin: 0 auto;            /* 가로 중앙 정렬 */
+}
+
+.intro-box2 {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.intro-box2 p {
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.intro-box2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
